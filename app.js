@@ -18,11 +18,9 @@ function board() {
                 var td = document.createElement('td');
                 var id = row + "." + column;
                 td.id = id;
-                //td.innerHTML = "<img src=\"horse.png\">";
                 document.getElementById(tr.id).appendChild(td);
                 if (!evenRow && !evenColumn) {
                     document.getElementById(td.id).className = "white";
-                    //document.getElementById(td.id).className += " marked";
                 } else if (!evenRow && evenColumn) {
                     document.getElementById(td.id).className = "green";
                 } else if (evenRow && evenColumn) {
@@ -46,7 +44,6 @@ function board() {
     this.addCellListeners = function(event) {
         if (event.target.tagName.toLowerCase() === 'td') {
             var id = event.target.id;
-            console.log(event.target.id + " | old knight: " + document.getElementById("knight").getAttribute("coords"));
             var row = id.substring(0, 1);
             var column = id.substring(2);
             moveKnight(row, column);
@@ -97,6 +94,5 @@ function board() {
             document.querySelector('body').removeEventListener('click', this.addCellListeners);
             alert("You lose! Hit F5 and try again.");
         }
-        //console.log(document.getElementsByClassName("free").length);
     }
 }
