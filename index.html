@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="app.js" ></script>
+	</head>
+<body>
+	<table class="app">
+		<tr><td>
+			<div class="gradient-light-linear">
+				<h1>Knight's Tour</h1>
+				You must visit every square on a chessboard below.<br>
+				The difficulty is that you can visit each square only once.<br>
+				Good Luck!<br>
+			</div>
+		</td></tr>
+		<tr><td>
+			<table class="chessboard"></table>
+			<script type="text/javascript">
+				var board = new board();
+				board.create();
+				board.initKnight();
+			</script>
+		</td></tr>
+	</table>
+</body>
+</html>

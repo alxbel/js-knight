@@ -1,0 +1,58 @@
+div[class*="gradient"]{
+	background-color: rgba(0, 185, 129, 0.36);
+	box-shadow: 0 0 0 1px #a27b62;
+	padding: 10px;
+	font-family: "Calibri";
+	font-size: 20px;
+}
+
+.gradient-light-linear {
+	background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.app {
+	border: solid white;
+	border-spacing: 20px;
+}
+
+.chessboard {
+	border: solid #00dbdb;
+	border-width: 8px;
+	border-style: inset;
+	border-spacing: 2px;
+	border-radius: 5px;
+	width: 500px;
+}
+
+#knight {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: relative;
+	background: url(horse.png);
+	background-size: 50px 50px;
+}
+
+.chessboard  td {
+	width: 50px;
+	height: 50px;
+	border:  solid grey;
+	border-width: 2px;
+}
+
+.green {
+	/*background-color: #00CC99;*/
+	background-color: rgba(0, 199, 133, 0.54);
+}
+
+.white {
+	background-color: white;
+}
+
+.marked {
+	background-color: #a7a7a7;
+}
